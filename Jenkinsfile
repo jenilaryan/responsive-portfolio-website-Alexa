@@ -43,8 +43,8 @@ pipeline {
             steps {
                 sh '''
                     aws ecs update-service \
-                    --cluster jenkins-demo-cluster \
-                    --service jenkins-demo-service \
+                    --cluster jenkins_aryan_demo_cluster \
+                    --service jenkins-demo-service-pk1n5yod \
                     --force-new-deployment \
                     --region $AWS_REGION
                 '''
